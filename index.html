@@ -1,2 +1,141 @@
-<h1>My first page</h1>
-<a href="./about/index.html">About the author</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My first page</h1>
+    <a href="./about/index.html">About the author</a>
+    <hr>
+    <p>&#11088;At the moment I am working in a completely different area, I am a Senior Tax Consultant.<br> 
+        &#127774;I am self-motivated, adaptable, having an eye for detail.<br> 
+        &#127775;Learning UI/UX design helped me realize that I like coding and I want to try myself on it.</p>
+    <p>&ast;<q><em>Learn continually. There's always “one more thing” to learn.</em></q> - <strong>&copy; Steve Jobs.</strong></p>
+    <img width="378px" height="505px" src="./photo_2021-07-25_12-07-50.jpg" alt="Photo">
+    <p>List</p>
+    <ol>
+        <li>Знакомство с Web</li>
+            <ul>
+                <li>Краткая история Web и что такое интернет.</li>
+                <li>Как устроен браузер и как он получает страницы по сети.</li>
+                <li>Что такое Git?</li>
+                <li>Создание первого репозитория.</li>
+                <li>О файле .gitignore.</li>
+            </ul>
+        <li>HTML-вёрстка - первые шаги</li>
+            <ul>
+                <li>Настройка рабочей среды.</li>
+                <li>Краткая история HTML.</li>
+                <li>Какие бывают теги и что такое атрибут.</li>
+                <li>Теги для работы с текстом.</li>
+                <li>Создание собственной страницы.</li>
+            </ul>
+        <li>Погружение в HTML-разметку</li>
+            <ul>
+                <li>Мета-теги.</li>
+                <li>Мнемоники.</li>
+                <li>Тег для работы с изображениями.</li>
+                <li>Тег для работы со списками.</li>
+                <li>Тег для работы с таблицами.</li>
+                <li>Тег для работы с формами.</li>
+                <li>Div-блоки.</li>
+            </ul>
+    </ol>
+    <table border="1" width="100%">
+        <tr>
+            <th width="30%">Tag</th>
+            <th width="70%">Description</th>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Defines a table</td>
+        </tr>
+        <tr>
+            <td>&lt;tr&gt;</td>
+        <td>Defines a row in a table</td>
+        </tr>
+        <tr>
+            <td>&lt;th&gt;</td>
+            <td rowspan="2">Defines a "header cell" / "cell" in a table</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt;</td>
+        </tr>
+        <tr>
+            <td colspan="2">Rarely used</td>
+        </tr>
+        <tr>
+            <td>&lt;caption&gt;</td>
+            <td>Defines a table caption</td>
+        </tr>
+        <tr>
+            <td>&lt;thead&gt;</td>
+            <td>Groups the header content in a table</td>
+        </tr>
+        <tr>
+            <td>&lt;tbody&gt;</td>
+            <td>Groups the body content in a table</td>
+        </tr>
+        <tr>
+            <td>&lt;tfoot&gt;</td>
+            <td>Groups the footer content in a table</td>
+        </tr>
+    </table>
+    <br>
+    <form action: '/'; form method: 'GET'>
+    <fieldset>
+    <legend>My first form</legend>
+        <div><label for="Name">Name</label></div> 
+        <div><input type="text" placeholder="Name" id="Name"></div>
+        <div><label for="Email">Email</label></div> 
+        <div><input type="text" id="Email"></div>
+        <div><label for="Password">Password</label></div> 
+        <div><input type="text" id="Name"></div>
+        <br>
+        <div><input type="range" min="1" max="10"></div>
+        <p>What does HTML stand for?</p>
+        <div>
+            <input type="checkbox" id="first line" name="first line">
+            <label for="first line">Hyperlinks and Text Markup Language</label>
+        </div>
+        <div>
+            <input type="checkbox" id="second line" name="second line">
+            <label for="second line">Home Tool Markup Language</label>
+        </div>
+        <div>
+            <input type="checkbox" id="third line" name="third line">
+            <label for="third line">Home Text Markup Language</label>
+        </div>
+        <p>What does HTTP stand for?</p>
+        <div>
+            <input type="radio" id="first line_2" name="radiobutton" value="translate">
+            <label for="first line_2">Hyper Text Translate Protocol</label>
+        </div>
+        <div>
+            <input type="radio" id="second line_2" name="radiobutton" value="transmission">
+            <label for="second line_2">Hyper Text Transmission Protocol</label>
+        </div>
+        <div>
+            <input type="radio" id="third line_2" name="radiobutton" value="transfer">
+            <label for="third line_2">Hyper Text Transfer Protocol</label>
+        </div>
+        <br>
+            <div><label for="comment">Comment</label></div> 
+            <div><textarea name="comment" id="comment" cols="500" rows="2">Comment</textarea>
+        <br>
+            <div><label for="select">What does HTML stand for?</label></div>
+            <select name="select" id="select">
+                <option selected="selected">Your answer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        <p></p>
+        <button type="submit">Send</button>
+    </fieldset>
+    </form>
+</body>
+</html>
