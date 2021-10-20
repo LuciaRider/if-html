@@ -12,7 +12,7 @@ body {
 }
 
 section {
-    padding: 120px 105px;
+    margin: 120px 105px;
 }
 
 h2 {
@@ -21,6 +21,8 @@ h2 {
     text-align: center;
     margin: 0;
 }
+
+/* block 2 start - advantages */
 
 .advantages_title {
     margin-bottom: 80px;
@@ -50,3 +52,38 @@ h2 {
 .advantages_content-text {
     margin: 0;
 }
+
+/* block 2 end - advantages */
+
+/* block 3 start - homes */
+
+.homes_title {
+    margin-bottom: 105px;
+}
+
+.homes_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_img {
+    position: relative;
+}
+
+.accent-blue {
+    color: #3077C6;
+    margin: 25px 0;
+}
+
+.secondary {
+    color: #BFBFBF;
+}
+
+.arrow_right {
+    position: absolute;
+    left: 275px;
+    top: 125px;
+    background-color: transparent;
+}
+
+/* block 3 end - homes */
