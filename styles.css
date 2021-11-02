@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body {
@@ -20,6 +23,99 @@ h2 {
     text-align: center;
     margin: 0;
 }
+
+h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+/* block 1 start - header */
+
+header {
+    background: url(./img/header-img.png) center no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    color: #FFFFFF;
+}
+
+.top-section_container {
+    min-width: 1440px;
+    padding: 50px 105px 120px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav_text a {
+    padding-right: 24px;
+}
+
+.nav_text a:hover {
+    text-decoration: underline #F5BD41;
+}
+
+.nav_icons img {
+    padding-left: 24px;
+}
+
+.top-section_content h1 {
+    padding-bottom: 100px;
+}
+
+.top-section_form {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #383838;
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    margin-bottom: 120px;
+    border: 3px solid #F3F3F4;
+}
+
+.form-block {
+    width: 100%;
+    position: relative;
+}
+
+.form_input {
+    width: 100%;
+    padding: 21px 24px 22px 24px;
+    border: 0 solid #FFF;
+    font-size: 18px;
+    color: #383838;
+    border-radius: 8px;
+}
+
+.form_label {
+    position: absolute;
+    left: 24px;
+    bottom: 70px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.top-section_bottom-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.top-section_bottom-icons img:first-child {
+    margin-right: 15px;
+}
+
+
+/* block 1 end - header */
 
 /* block 2 start - advantages */
 
@@ -93,8 +189,8 @@ h2 {
 
 .arrow_right {
     position: absolute;
-    left: 275px;
-    top: 125px;
+    right: -20px;
+    top: 128px;
     background-color: transparent;
 }
 
