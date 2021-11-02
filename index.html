@@ -14,11 +14,11 @@
     <header>
         <div class="top-section_container">
             <div class="header">
-                <img src="./img/logo.svg" alt="Logo">
+                <a href="#"><img src="./img/logo.svg" alt="Logo"></a>
                 <nav class="header_nav">
                     <div class="nav_text">
-                        <a>Stays</a>
-                        <a>Attractions</a>
+                        <a class="nav_text_menu">Stays</a>
+                        <a class="nav_text_menu">Attractions</a>
                     </div>
                     <div class="nav_icons">
                         <img src="./img/Night.svg" alt="Night-icon">
@@ -32,18 +32,22 @@
                     to live, work or just relax
                 </h1>
             </div>
-                <div class="top-section_form">
-                    <form>
-                        <div class="form-block">
-                            <input type="text" id="name" name="name" value="New York" class="form_input">
-                            <label for="name" class="form_label">Your destination or hotel name</label>
+                <div class="form_wrap">
+                    <form action="" class="top-section_form">
+                        <div class="destination">
+                            <input class="destination_input" type="text" id="destination-input" name="destination-input" required value="New York">
+                            <label class="destination_label" for="destination-input">Your destination or hotel name</label>
                         </div>
-                        <div class="form-block">
-                    
+                        <div class="check-in">
+                            <input class="check-in_input" type="text" id="check-in-input" name="check-in-input" required value="Tue 15 Sept — Sat 19 Sept">
+                            <label class="check-in_label" for="check-in-input">Check-in — Check-out</label><br>
                         </div>
-                        <div class="form-block"></div>
-                        <div class="form-block"></div>
-                        <div class="form-block"></div>
+                        <div class="children">
+                            <input class="children_input" type="text" id="children-input" name="children-input" required value="2 Adults — 0 Children — 1 Room">
+                        </div>
+                        <div class="button">
+                            <button class="form_button">Search</button>
+                        </div>
                     </form>
                 </div>
                 <div class="top-section_bottom-icons">
