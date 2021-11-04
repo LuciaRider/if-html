@@ -51,6 +51,12 @@ header {
     padding-bottom: 200px;
 }
 
+.logo {
+    height: 40px;
+    width: 205px;
+    fill: #3077C6;
+}
+
 .header_nav {
     display: flex;
     align-items: center;
@@ -79,8 +85,16 @@ header {
     display: block;
 }
 
-.nav_icons img {
-    padding-left: 24px;
+.night {
+    height: 30px;
+    width: 30px;
+    margin-left: 24px;
+}
+
+.account {
+    height: 40px;
+    width: 40px;
+    margin-left: 24px;
 }
 
 .top-section_content h1 {
@@ -199,8 +213,16 @@ header {
     justify-content: center;
 }
 
-.top-section_bottom-icons img:first-child {
+
+.google-play {
+    height: 40px;
+    width: 135px;
     margin-right: 15px;
+}
+
+.app-store {
+    height: 40px;
+    width: 120px;
 }
 
 
@@ -235,6 +257,12 @@ header {
 
 .advantages_content-img {
     padding-bottom: 48px;
+}
+
+.content_support svg {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 48px;
 }
 
 .advantages_content-text {
@@ -334,4 +362,106 @@ footer {
     color: #FFFFFF;
 }
 
+.logo_footer {
+    display: none;
+}
+
 /* block 7 end - footer */
+
+/* for mobile */
+
+/* What do we offer */
+
+@media only screen and (max-width: 360px) {
+    section {
+        padding: 24px 17px 40px ;
+    }
+
+    .advantages_container {
+        min-width: 214px;
+    }
+
+    .advantages_title {
+        margin-bottom: 32px;
+    }
+
+    .advantages_line {
+        display: none;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .advantages_content {
+        display: block;
+    }
+
+    .content_support {
+        margin: 0 auto 32px;
+        width: 100%;
+    }
+
+    .content_support:last-child {
+        margin: 0 auto;
+    }
+
+    .content_support svg {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 16px;
+    }
+
+    .advantages_content-text {
+        font-size: 15px;
+    }
+
+/* Footer */
+
+    footer {
+        padding: 40px 67px;
+        min-height: 123px;
+        min-width: 225px;
+    }
+
+    .footer_container {
+        min-width: 225px;
+    }
+
+    .logo_footer {
+        fill: #FFFFFF;
+        height: 19px;
+        width: 98px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer_content {
+        margin: 40px auto 32px;
+        width: 225px;
+        height: 18px;
+    }
+
+    .footer_text_regular {
+        display: none;
+    }
+
+    .footer_text_medium {
+        font-size: 15px;
+        text-decoration: underline;
+    }
+
+    .footer_about {
+        padding-right: 16px;
+    }
+
+    .footer_property {
+        padding-right: 16px;
+    }
+
+    .footer_rights {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
