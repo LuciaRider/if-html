@@ -243,7 +243,6 @@ header {
     width: 120px;
 }
 
-
 /* block 1 end - header */
 
 /* block 2 start - advantages */
@@ -345,6 +344,39 @@ header {
 }
 
 /* block 3 end - homes */
+
+/* block 4 start - destinations */
+
+.destinations_container {
+    margin: 0 auto;
+}
+
+.destinations_title {
+    margin-bottom: 105px;
+    position: relative;
+}
+
+.destinations_title h2::before {
+    position: absolute;
+    content: '';
+    background-color: #F5BD41;
+    left: 46%;
+    bottom: -30%;
+    width: 7.5%;
+    height: 4px;
+}
+
+.destinations_line {
+    width: 100px;
+    height: 4px;
+    background-color: #F5BD41;
+    margin: 20px auto 0 auto;
+}
+
+.advantages_content {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* block 7 start - footer */
 
