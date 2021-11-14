@@ -57,25 +57,25 @@ header {
 }
 
 .nav_text a {
-    padding-right: 24px;
+    margin-right: 24px;
 }
 
 .nav_text>.nav_text_menu {
     position: relative;
 }
 
-.nav_text>.nav_text_menu::before {
+.nav_text>.nav_text_menu::after {
     position: absolute;
     display: none;
     content: '';
     left: 6%;
     bottom: -30%;
-    width: 60%;
+    width: 90%;
     height: 4px;
     background-color: #F5BD41;
 }
 
-.nav_text>.nav_text_menu:hover::before {
+.nav_text>.nav_text_menu:hover::after {
     display: block;
 }
 
