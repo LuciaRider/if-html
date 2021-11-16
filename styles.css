@@ -62,7 +62,7 @@ header {
 }
 
 .nav_text a {
-    margin-right: 24px;
+    padding-right: 24px;
 }
 
 .nav_text_menu {
@@ -76,7 +76,7 @@ header {
     content: '';
     left: 6%;
     bottom: -30%;
-    width: 90%;
+    width: 60%;
     height: 4px;
     background-color: #F5BD41;
     opacity: 0;
@@ -361,7 +361,6 @@ footer {
     padding: 120px 105px;
 }
 
-
 .footer_about {
     width: 33.33%;
 }
@@ -409,10 +408,6 @@ footer {
 }
 
 /* block 7 end - footer */
-
-/* for mobile */
-
-/* What do we offer */
 
 @media only screen and (max-width: 360px) {
     
