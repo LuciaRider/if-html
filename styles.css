@@ -62,7 +62,7 @@ header {
 }
 
 .nav_text a {
-    padding-right: 24px;
+    margin-right: 24px;
 }
 
 .nav_text_menu {
@@ -76,7 +76,7 @@ header {
     content: '';
     left: 6%;
     bottom: -30%;
-    width: 60%;
+    width: 90%;
     height: 4px;
     background-color: #F5BD41;
     opacity: 0;
