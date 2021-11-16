@@ -65,23 +65,38 @@ header {
     padding-right: 24px;
 }
 
-.nav_text>.nav_text_menu {
+.nav_text_menu {
     position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-.nav_text>.nav_text_menu::before {
+.nav_text_menu::before {
     position: absolute;
-    display: none;
     content: '';
     left: 6%;
     bottom: -30%;
     width: 60%;
     height: 4px;
     background-color: #F5BD41;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
-.nav_text>.nav_text_menu:hover::before {
-    display: block;
+.nav_text_menu:hover::before {
+    opacity: 1;
+}
+
+.nav_text_menu:active::before {
+    position: absolute;
+    content: '';
+    left: 6%;
+    bottom: -30%;
+    width: 60%;
+    height: 4px;
+    background-color: #F5BD41;
+    opacity: 1;
+    transition: none;
 }
 
 .night {
@@ -244,7 +259,18 @@ header {
 }
 
 .advantages_title {
-    margin-bottom: 80px;
+    margin-bottom: 105px;
+    position: relative;
+}
+
+.advantages_title h2::before {
+    position: absolute;
+    content: '';
+    background-color: #F5BD41;
+    left: 46%;
+    bottom: -30%;
+    width: 7.5%;
+    height: 4px;
 }
 
 .advantages_line {
@@ -320,6 +346,10 @@ header {
     background-color: transparent;
 }
 
+.arrow_right_adaptive {
+    display: none;
+}
+
 /* block 3 end - homes */
 
 /* block 7 start - footer */
@@ -379,21 +409,20 @@ footer {
 
 /* block 7 end - footer */
 
-/* for mobile */
-
-/* What do we offer */
-
 @media only screen and (max-width: 360px) {
+    
+    /* advantages */
+    
     section {
-        padding: 24px 17px 40px ;
-    }
-
-    .advantages_container {
-        min-width: 214px;
+        padding: 40px 17px;
     }
 
     .advantages_title {
         margin-bottom: 32px;
+    }
+
+    .advantages_title h2::before {
+        display: none;
     }
 
     .advantages_line {
@@ -427,7 +456,7 @@ footer {
         font-size: 15px;
     }
 
-/* Footer */
+/* footer */
 
     footer {
         padding: 40px 67px;
@@ -481,4 +510,51 @@ footer {
         font-size: 12px;
         text-align: center;
     }
+
+/* homes */
+
+    .homes_title {
+        margin-bottom: 32px;
+    }
+
+    .homes_content div:nth-child(3) {
+        display: none;
+    }
+
+    .homes_content div:nth-child(4) {
+        display: none;
+    }
+
+    .content_img {
+        width: 155px;
+    }
+
+    .content_img:nth-child(2) {
+        position: relative;
+    }
+
+    .content_img img:first-child {
+        width: 155px;
+        height: 155px;
+    }
+
+    .content_img p {
+        font-size: 12px;
+        margin: 8px 0 4px;
+    }
+
+    .content_img p:last-child {
+        margin: 0;
+    }
+
+    .arrow_right_adaptive {
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        right: -13px;
+        top: 69px;
+        background-color: transparent;
+    }
+
 }
