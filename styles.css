@@ -352,10 +352,6 @@ footer {
     padding: 120px 105px;
 }
 
-footer a {
-    text-decoration: none;
-}
-
 .footer_about {
     width: 33.33%;
 }
@@ -662,10 +658,6 @@ footer a {
     }
 
 }
-
-/* for mobile width 360px */
-
-/* What do we offer */
 
 @media only screen and (max-width: 360px) {
     
