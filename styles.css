@@ -56,8 +56,10 @@ header {
 }
 
 .logo {
-    height: 40px;
-    width: 205px;
+    max-height: 40px;
+    height: 100%;
+    max-width: 205px;
+    width: 100%;
     fill: #3077C6;
 }
 
@@ -611,7 +613,7 @@ header {
     width: 100%;
 }
 
-.reviews_card_img:hover .reviews_price_amount {
+.reviews_card_price:hover .reviews_price_amount {
     z-index: 1;
 }
 
@@ -1362,6 +1364,10 @@ footer {
 
     .reviews_card2 {
         margin-right: 0;
+    }
+
+    .reviews_price_amount {
+        font-size: 16px;
     }
 
     footer {
